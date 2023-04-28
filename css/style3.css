@@ -1,0 +1,84 @@
+*{
+  margin: 0;padding: 0;box-sizing: border-box;outline: none;
+}
+html{
+  height: 100%;
+}
+body{
+  font-family: sans-serif;
+  background-color:#135d84;
+
+}
+.login_box{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% ,-50%);
+  width: 400px;
+  padding: 40px;
+  
+  background-color: #f1f3f4;
+  box-shadow: 0  15px 25px rgba(0 ,0,0,.6) ;
+  border-radius: 10px;
+}
+.login_box h2{
+
+margin: 0 0 30px;
+color: rgb(8, 8, 8);  
+text-align: center; 
+}
+.login_box .user_box{
+
+position: relative; 
+}
+
+.login_box .user_box input{
+  width: 100%;
+  padding: 10px 0;
+  color: black;  
+  margin-bottom: 30px;
+  font-size: 16px;
+border-bottom: solid 1px rgb(11, 10, 10);
+background-color: transparent;
+}
+.login_box .user_box label{
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: -20px 0;
+  color: #fff;  
+  font-size: 16px;
+pointer-events: none;
+transition: .5s;
+}
+.login_box .user_box input:focus ~ label,
+.login_box .user_box input:valid ~ label{
+
+  top: -20px;
+  left: 0;
+  color: #135d84;
+  font-size: 12px;
+}
+.login_box form a{
+
+
+padding: 20px 50px;
+color: #135d84;
+text-align: center;
+text-decoration: none;
+overflow: hidden;
+
+
+}
+.login_box .user_box input.ss{
+  transition: 1s;
+  background-color: #135d84;
+  color: #fff;
+font-size: 20px;
+
+}
+.login_box .user_box input.ss:hover{
+  background-color: transparent;
+  border: solid 2px #135d84;
+  color: #000;
+}
